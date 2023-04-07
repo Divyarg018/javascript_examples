@@ -14,3 +14,28 @@ arr[0] = 'harry';
 let arrelement = arr[0];
 // console.log('element :', arrelement);
 // console.log(arr);
+
+let value = marks.indexOf(73);
+// console.log(value)
+
+// Mutating or Modifying arrays
+// marks.push(3564);
+// marks.unshift(1009);
+// marks.pop()
+// marks.shift()
+// marks.splice(2, 3);
+// marks.reverse()
+let marks2 = [1, 2,3, 7]
+marks = marks.concat(marks2);
+// console.log(marks);
+
+let myobj = {
+    'first name': 'harry', 
+    channel: 'CodeWithHarry',
+    isActive: true,
+    marks: [1,5,3,6]
+}
+
+console.log(myobj)
+console.log(myobj['channel'])
+console.log(myobj.channel)
