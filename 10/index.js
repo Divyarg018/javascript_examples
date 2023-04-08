@@ -19,3 +19,24 @@ console.log(ui("harry"), i)
 //   return msg;
 
 //}
+
+// let name = 'SkillF';
+// let name2 ='Rohan';
+
+// let val = mygreet(name, 'Thanks a lot');
+// console.log(val);
+
+
+// const myobj = {
+//     name: "SkillF",
+//     game: function(){
+//         return "GTA";
+//     }
+// }
+// console.log(myobj.game())
+
+// arr = ['fruit', 'vegetable', 'furniture'];
+
+// arr.forEach(function(element, index, array) {
+//     console.log(element, index)
+// });         
