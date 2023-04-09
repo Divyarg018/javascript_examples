@@ -23,3 +23,13 @@ let container = document.querySelector('div.container');
 
 // console.log(container.firstChild);
 // console.log(container.firstElementChild);
+
+// console.log(container.lastChild);
+// console.log(container.lastElementChild);
+// console.log(container.children);
+// console.log(container.childElementCount); // Count of child elements
+
+console.log(container.firstElementChild.parentNode);
+console.log(container.firstElementChild.nextSibling);
+console.log(container.firstElementChild.nextElementSibling);
+console.log(container.firstElementChild.nextElementSibling.nextElementSibling);
