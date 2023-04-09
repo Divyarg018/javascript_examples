@@ -13,3 +13,13 @@ let nodeType = cont.childNodes[1].nodeType;
 // 8. Comment
 // 9. document
 // 10. docType
+
+// console.log(cont.childNodes);
+// console.log(cont.children);
+
+let container = document.querySelector('div.container');
+
+// console.log(container.children[1].children[0].children);
+
+// console.log(container.firstChild);
+// console.log(container.firstElementChild);
