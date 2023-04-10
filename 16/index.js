@@ -9,3 +9,13 @@ element.id = 'createdLi';
 element.setAttribute('title', 'mytitle');
 // element.innerText = '<b>Hello this is created by harry</b>';
 // element.innerHTML = '<b>Hello this is created by harry</b>';
+let ul = document.querySelector('ul.this');
+ul.appendChild(element);
+// console.log(ul)
+// console.log(element)
+
+let elem2 = document.createElement('h3');
+elem2.id = 'elem2';
+elem2.className = 'elem2';
+let tnode = document.createTextNode('This is a created node for elem2');
+elem2.appendChild(tnode);
