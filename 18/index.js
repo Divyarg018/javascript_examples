@@ -19,3 +19,15 @@ console.log('This is tut 18');
 //     e.preventDefault();
 // }
 // document.querySelector('.no').addEventListener('mouseenter', function(){
+//     console.log('You entered no')
+// })
+
+// document.querySelector('.no').addEventListener('mouseleave', function(){
+//     console.log('You exited no')
+// })
+
+document.querySelector('.container').addEventListener('mousemove', function(e){
+    console.log(e.offsetX, e.offsetY);
+    document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetX},154)`;
+    console.log('You triggered mouse move event')
+})
