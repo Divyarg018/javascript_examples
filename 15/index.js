@@ -10,9 +10,9 @@ let nodeType = cont.childNodes[1].nodeType;
 // 1. Element
 // 2. Attribute
 // 3. Text Node
-// 8. Comment
-// 9. document
-// 10. docType
+// 4. Comment
+// 5. document
+// 6. docType
 
 // console.log(cont.childNodes);
 // console.log(cont.children);
