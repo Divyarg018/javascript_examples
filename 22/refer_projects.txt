@@ -1,0 +1,3 @@
+go to projects section
+
+02. note taking app with pure javascript
