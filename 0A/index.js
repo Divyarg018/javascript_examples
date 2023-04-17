@@ -65,5 +65,79 @@ else{
     console.log(rou);
 }
 */
-    
+/*
+var myName = 'Balaji';
+var age = 35;
+
+console.log(myName);
+console.log(age);
+console.log('My name is ' + myName + ' & my age is ' + age);
+*/
+
+/*
+let myName = "Kishan";
+let age = 3;
+
+console.log(myName);
+console.log(age);
+console.log('My name is ' + myName + ' & my age is ' + age);
+*/
+/*
+const myWife = "Seema";
+const age = 30;
+console.log('My wife is ' + myWife + ' & her age is ' + age);
+*/
+// In programming when the operator has two operands it is called Binary operator
+// eg. var a = 5 + 6; var b = 7 -4; var c = a * b;
+// When an operator has three operands it is called Ternary operator
+// eg. var c = (condition) ? 55 : 65;
+// when an operator has only one operand it is called unary operator.
+
+// var num = 55; // assigment operator
+
+// num += 10; // 65 | Equivalent: num = num + 10;
+// num -= 20; // 45 | Equivalent: num = num - 20;
+// num *= 100; // 4500 | Equivalent: num = num * 100;
+// num /= 50; //90 | Equivalent: num = num / 50;
+// num %= 4; // 2 | Equivalent: num = num % 4;
+
+// Increment and Decrement operator
+/*
+let year = 1987;
+year++;
+console.log(year);
+year--;
+year--;
+year--;
+console.log(year);
+*/
+
+// string concatenation vs Interpolation
+/*
+let myName = 'Balaji';
+let age = 35;
+
+console.log('My name is ' + myName + ' & my age is '+ age);
+console.log(`My name is ${myName} & my age is : ${age}`);
+*/
+
+// typeof is a keyword used to know the type of the variable present
+// js is  ot a strictly type checked language like Java
+// any type of vale can fit into any variable present
+
+let foo = " Super Man";
+console.log(typeof foo);
+foo = 1975;
+console.log(typeof foo);
+foo = 55.78;
+console.log(typeof foo);
+foo =100 > 200;
+console.log(typeof foo);
+
+
+
+
+
+
+
 
