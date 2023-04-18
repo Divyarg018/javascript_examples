@@ -290,7 +290,7 @@ console.log(valueFive); // Error valueFive is not defined
 console.log(valueSix); // Error valueSix is not defined
 */
 
-// Scope of local variable(var and let)
+/* Scope of local variable(var and let)
 
 for (var i = 1; i<=5; i++){
     console.log('Hello World');
@@ -302,3 +302,4 @@ for (let j = 1; j<= 5; j++){
     console.log("Saranghae");
 }
 console.log(j); // j is not accessible outside the block
+*/
