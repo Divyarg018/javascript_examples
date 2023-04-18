@@ -131,7 +131,7 @@ areaOfTriangle(20, 30);
 
 // while declaring a function parameters, we can even declare its default value.
 // in case the user forgets to pass the arguments, default arguments will be considered for processing.
-
+/*
 function sayNamaste(myName ='Random Person'){
     console.log(`Namaste ${myName}! Welcome Home!`);
 }
@@ -149,3 +149,156 @@ function areaOfTriangle(b=5, h=5){
 sayNamaste();
 areaOfRectangle();
 areaOfTriangle(10);
+*/
+/*
+// Return statement
+
+function areaOfRectangle(length = 10, breadth = 10) {
+    let area = length * breadth;
+    console.log(`Area of the rectangle is: ${area}`);
+}
+function areaOfTriangle(b, h) {
+    let area = 0.5 * b * h;
+    return area;
+}
+
+areaOfRectangle(15, 20);
+
+var triangleArea = areaOfTriangle(10, 15);
+console.log(`Area of the triangle is: ${triangleArea}`);
+*/
+
+// Helper functions
+// onvoking one function inside another function is a common practice. such functions area called helper functions.
+/*
+function mangoWeight(count){
+    return count * 0.25;
+}
+
+function mangoCost(count){
+    return mangoWeight(count) * 175;
+}
+
+var costOfMangoes = mangoCost(25);
+console.log(`Cost of 25 mangoes is: Rs.${costOfMangoes} only/-`);
+console.log('Cost of 35 mangoes is: Rs.' + mangoCost(35) + ' only/- ');
+console.log(`Cost of 45 mangoes is: Rs.${mangoCost(45)} only/-`);
+*/
+
+// Function expression(anonymous functions)
+/*
+Function expression is nothing but a function object referred by a variable
+as we dont name anything it is called Anonymous functions
+with the this we can transfer the function object to some other varibale and start invoking the function by that name.
+*/
+/*
+function areaOfTriangle(b, h);{
+    let area = 0.5 * b * h;
+    return area;
+}
+
+var triangleArea = function(b, h){
+    let area = 0.5 * b * h;
+    return area;
+}
+
+console.log(`area using function: ${areaOfTriangle(10, 15)}`);
+console.log(`area using function expression: ${triangleArea(5, 7)}`);
+*/
+
+/*Transferring function expression
+
+var triangleArea = function(b, h){
+    let area = 0.5 * b * h;
+    return area;
+}
+
+var area = triangleArea;
+
+triangleArea = null;
+
+console.log (`using 'area' variable: $(area(5, 7)})`);
+console.log(`using 'triangleArea' varibale: ${triangleArea(5, 7)}`);
+*/
+
+/* Arrow head functions
+
+var triangleArea = (base, height)=>{
+    let area = 0.5 * base * height;
+    return area;
+}
+
+var sayHello = () =>{
+    console.log('Hello Everyone');
+}
+
+var sayNamaste = myName =>{
+    console.log(`Namaste ${myName}! Welcome Home!`);
+}
+
+//console.log(`Area of the triangle is: ${triangleArea(5, 8)}`);
+sayHello();
+sayNamaste('Seema');
+*/
+
+/* Concise body(arrow function)
+
+var triangleArea = (base, height) => {
+    let are = 0.5 * base * height;
+    return triangleArea;
+}
+
+var triangleArea = (base, height) => 0.5 * base * height;
+console.log(`area of triangle is: ${triangleArea(5, 7)}`);
+*/
+
+/* 
+Scope
+{...} demacrates scope in js
+variables created inside a method or a if else blovks, or the arameters inside a function(created using let keyword) live and die after the scope ends.
+Global scope area variables created outside any scope can be accessible till the end of the program.
+Local scope are avriables craeted inside thsoe above mentioned blocks.
+*/
+/*
+var valueOne = 10; // global scope(line number 1 to end)
+var valueTwo = 20; // global scope(line number 1 to end)
+var valueThree = 30; // global scope(line number 1 to end)
+
+function funA(){
+    {
+    var valueFour = 40; // function scope(Line number 5 to 20)
+    let valueFive = 50; // function scope(Line number 7 to 10)
+    const valueSix = 60; // function scope(Line number 7 to 10)
+}
+
+console.log(valueOne); // Accessing Global variable inside function
+console.log(valueTwo); // Accessing Global variable inside function
+console.log(valueThree); // Accessing Global variable inside function
+
+console.log(valueFour); // Accessing function level variable inside a function
+console.log(valueFive); // Error: valueFive is not defined
+console.log(valueSix); // Error: valueSix is not defined
+}
+
+funA();
+
+console.log(valueOne);
+console.log(valueTwo);
+console.log(valueThree);
+console.log(valueFour); // Error valueFour is not defined
+console.log(valueFive); // Error valueFive is not defined
+console.log(valueSix); // Error valueSix is not defined
+*/
+
+// Scope of local variable(var and let)
+
+for (var i = 1; i<=5; i++){
+    console.log('Hello World');
+}
+
+console.log(i); // i is accessible even outside.
+
+for (let j = 1; j<= 5; j++){
+    console.log("Saranghae");
+}
+console.log(j); // j is not accessible outside the block
