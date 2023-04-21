@@ -189,6 +189,9 @@ let startsWith = fruits.findIndex((fr)=>{
 console.log(startsWith);
 */
 
+//Assignment
+//sort()
+/*
 const num = [45, 250, 35, 1500, 650, 125];
 
 num.sort((a, b) => {
@@ -213,6 +216,20 @@ fruits.sort((a, b) => {
 });
 
 console.log(fruits);
+*/
 
 
 
+let num = [2, 3, 4, 5]
+
+let output = num.reduce ((acc, curr) => acc = curr * acc, 100);
+
+console.log(output);
+
+
+
+let fruits = ['apple', 'kiwi', 'mango', 'grapes', 'watermelon'];
+
+let out = fruits.reduce((acc, curr) => acc + " " + curr , "hi");
+
+console.log(out);
