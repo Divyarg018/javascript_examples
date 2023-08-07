@@ -107,6 +107,9 @@ function goToHell(pros) {
 
         setTimeout((key,objs) => {
             console.log(objs[key]);
+            setTimeout((sub) => {
+                console.log(`Age of Kishan is: ${sub.age}`);
+            }, 2000, objs[`kishan`]);
         }, 3000, 'kishan', objs)
     }, 2000, pros);
 }
