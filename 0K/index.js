@@ -100,21 +100,28 @@ const profiles ={
 4) Display kishan's hobbies after 4 seconds(from three). 
 */
 
-function goToHell(pros) {
-    setTimeout((objs) => {
-        let keys = Object.keys(objs);
-        console.log(keys);
+// function goToHell(pros) {
+//     setTimeout((objs) => {
+//         let keys = Object.keys(objs);
+//         console.log(keys);
 
-        setTimeout((key,objs) => {
-            console.log(objs[key]);
-            setTimeout((sub) => {
-                console.log(`Age of Kishan is: ${sub.age}`);
-                setTimeout((sub)=> {
-                    console.log(`Hobbies of Kishan are: ${sub.hobbies}`)
-                }, 4000, sub);
-            }, 2000, objs[`kishan`]);
-        }, 3000, 'kishan', objs)
-    }, 2000, pros);
-}
+//         setTimeout((key,objs) => {
+//             console.log(objs[key]);
+//             setTimeout((sub) => {
+//                 console.log(`Age of Kishan is: ${sub.age}`);
+//                 setTimeout((sub)=> {
+//                     console.log(`Hobbies of Kishan are: ${sub.hobbies}`)
+//                 }, 4000, sub);
+//             }, 2000, objs[`kishan`]);
+//         }, 3000, 'kishan', objs)
+//     }, 2000, pros);
+// }
 
-goToHell(profiles);
+// goToHell(profiles);
+
+
+/* Promises in Js
+
+1. Promises in Js are used to handle Asynchronous operations.
+2. A promise is an object that keep track about whether a certain event has happened already or not. It alsodetermines what will happen after the event.
+3. promise has three stages: prnding, completed and rejected.
