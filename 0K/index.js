@@ -138,7 +138,7 @@ In Ashynchronous programing language like js: callBack functions are absolute ne
 
 //     if(didIBringTheChocolates == true){
 //         console.log(`Kishan says: Thank you appa!!`);
-    
+
 //     }
 //     else{
 //         console.log(`Kishan is crying: I hate you!!`);
@@ -162,7 +162,7 @@ To execute a promise we write:
 anyPromise.then(resolve-fun).catch(reject-fun);*/
 
 
-const tryTobringChocolates = function(resolve, reject) {
+/*const tryTobringChocolates = function(resolve, reject) {
 
     let didIBringTheChocolates = false; //stage-1
     setTimeout(() => {console.log("Getting ready to go to market")}, 2000);
@@ -191,4 +191,45 @@ function cryInCorner(){
 }
 
 let iPromiseToBringChocolates = new Promise(tryTobringChocolates);
-iPromiseToBringChocolates.then(eatTheChocolates).catch(cryInCorner);
+iPromiseToBringChocolates.then(eatTheChocolates).catch(cryInCorner);*/
+
+const profiles = {
+    'balaji': {
+        fullname: 'Balaji KR',
+        age: 35,
+        married: true,
+        hobbies: ['Defence', 'Finance', 'Foreign Affairs']
+    },
+
+    'seema': {
+        fullname: 'Seema H',
+        age: 30,
+        married: true,
+        hobbies: ['Cooking', 'Painting', 'Art & Craft']
+    },
+
+    'kishan': {
+        fullname: 'Kishan KB',
+        age: 3,
+        married: false,
+        hobbies: ['football', 'video games']
+    },
+
+    'rajeev': {
+        fullname: 'Rajeevalochana KV',
+        age: 70,
+        married: true,
+        hobbies: ['watching Tv']
+    }
+
+}
+
+//     /* Requirement:
+//     1) Display keys of all profiles after 2 seconds.
+//     2) Display profile of kishan agter 3 seconds(from one).
+//     3) Display kishan's age after 2 seconds(from two).
+//     4) Display kishan's hobbies after 4 seconds(from three).
+//  */
+
+//goTohell.then(displayKeys).catch(error);// Invoking the promise
+
