@@ -92,3 +92,19 @@ const profiles ={
     }
 
 }
+
+/* Requirement:
+1) Display keys of all profiles after 2 seconds.
+2) Display profile of kishan agter 3 seconds(from one).
+3) Display kishan's age after 2 seconds(from two).
+4) Display kishan's hobbies after 4 seconds(from three). 
+*/
+
+function goToHell(pros) {
+    setTimeout((objs) => {
+        let keys = Object.keys(objs);
+        console.log(keys);
+    }, 2000, pros);
+}
+
+goToHell(profiles);
