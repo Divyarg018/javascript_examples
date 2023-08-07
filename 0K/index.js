@@ -104,6 +104,10 @@ function goToHell(pros) {
     setTimeout((objs) => {
         let keys = Object.keys(objs);
         console.log(keys);
+
+        setTimeout((key,objs) => {
+            console.log(objs[key]);
+        }, 3000, 'kishan', objs)
     }, 2000, pros);
 }
 
