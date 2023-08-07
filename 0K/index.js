@@ -62,36 +62,36 @@ taht si why: call back functions are a way to make sure certain code doesnt exec
 In Ashynchronous programing language like js: callBack functions are absolute necessity*/
 
 
-const profiles = {
-    'balaji': {
-        fullname: 'Balaji KR',
-        age: 35,
-        married: true,
-        hobbies: ['Defence', 'Finance', 'Foreign Affairs']
-    },
+// const profiles = {
+//     'balaji': {
+//         fullname: 'Balaji KR',
+//         age: 35,
+//         married: true,
+//         hobbies: ['Defence', 'Finance', 'Foreign Affairs']
+//     },
 
-    'seema': {
-        fullname: 'Seema H',
-        age: 30,
-        married: true,
-        hobbies: ['Cooking', 'Painting', 'Art & Craft']
-    },
+//     'seema': {
+//         fullname: 'Seema H',
+//         age: 30,
+//         married: true,
+//         hobbies: ['Cooking', 'Painting', 'Art & Craft']
+//     },
 
-    'kishan': {
-        fullname: 'Kishan KB',
-        age: 3,
-        married: false,
-        hobbies: ['football', 'video games']
-    },
+//     'kishan': {
+//         fullname: 'Kishan KB',
+//         age: 3,
+//         married: false,
+//         hobbies: ['football', 'video games']
+//     },
 
-    'rajeev': {
-        fullname: 'Rajeevalochana KV',
-        age: 70,
-        married: true,
-        hobbies: ['watching Tv']
-    }
+//     'rajeev': {
+//         fullname: 'Rajeevalochana KV',
+//         age: 70,
+//         married: true,
+//         hobbies: ['watching Tv']
+//     }
 
-}
+// }
 
 /* Requirement:
 1) Display keys of all profiles after 2 seconds.
@@ -124,4 +124,25 @@ const profiles = {
 
 1. Promises in Js are used to handle Asynchronous operations.
 2. A promise is an object that keep track about whether a certain event has happened already or not. It alsodetermines what will happen after the event.
-3. promise has three stages: prnding, completed and rejected.
+3. promise has three stages: prnding, completed and rejected.*/
+
+const bringChocolates = function() {
+
+    let didIBringTheChocolates = false; //stage-1
+    console.log("Getting ready to go to market");
+    console.log("Booking a cab to the store");
+    console.log("Selecting the chocolate");
+    console.log("Making the payment");
+
+    didIBringTheChocolates = true;//stage-2
+
+    if(didIBringTheChocolates == true){
+        console.log(`Kishan says: Thank you appa!!`);
+    
+    }
+    else{
+        console.log(`Kishan is crying: I hate you!!`);
+    }
+}
+
+bringChocolates();
