@@ -126,23 +126,69 @@ In Ashynchronous programing language like js: callBack functions are absolute ne
 2. A promise is an object that keep track about whether a certain event has happened already or not. It alsodetermines what will happen after the event.
 3. promise has three stages: prnding, completed and rejected.*/
 
-const bringChocolates = function() {
+// const bringChocolates = function() {
+
+//     let didIBringTheChocolates = false; //stage-1
+//     // console.log("Getting ready to go to market");
+//     // console.log("Booking a cab to the store");
+//     // console.log("Selecting the chocolate");
+//     // console.log("Making the payment");
+
+//     didIBringTheChocolates = false;//stage-2
+
+//     if(didIBringTheChocolates == true){
+//         console.log(`Kishan says: Thank you appa!!`);
+    
+//     }
+//     else{
+//         console.log(`Kishan is crying: I hate you!!`);
+//     }
+// }
+
+// bringChocolates();
+
+/* Handling Promises:
+
+1. Promises have a structured way to handle different conditions.
+2. Plain if/else conditions does not give us the ability to handle things in a structured way.
+3. If promises carefully executed: resolve() method is executed.
+4. If promises have failed in executing: reject() method will be executed.
+5. In the meantime, the browser will be continuing other work pending in its hands.
+
+To craete a promise we write:
+let anyPromise = newPromise(resolve, reject);
+
+To execute a promise we write:
+anyPromise.then(resolve-fun).catch(reject-fun);*/
+
+
+const tryTobringChocolates = function(resolve, reject) {
 
     let didIBringTheChocolates = false; //stage-1
-    // console.log("Getting ready to go to market");
-    // console.log("Booking a cab to the store");
-    // console.log("Selecting the chocolate");
-    // console.log("Making the payment");
+    setTimeout(() => {console.log("Getting ready to go to market")}, 2000);
+    setTimeout(() => {console.log("Booking a cab to the store")}, 4000);
+    setTimeout(() => {console.log("Selecting the chocolate")}, 6000);
+    setTimeout(() => {console.log("Making the payment")}, 8000);
 
-    didIBringTheChocolates = false;//stage-2
+    setTimeout(() => {didIBringTheChocolates = true;
 
     if(didIBringTheChocolates == true){
-        console.log(`Kishan says: Thank you appa!!`);
+        resolve();
     
     }
     else{
-        console.log(`Kishan is crying: I hate you!!`);
+        reject();
     }
+}, 12000);
 }
 
-bringChocolates();
+function eatTheChocolates(){
+    console.log(`Kishan says: Thank you appa!!`);
+}
+
+function cryInCorner(){
+    console.log(`Kishan is crying: I hate you!!`);
+}
+
+let iPromiseToBringChocolates = new Promise(tryTobringChocolates);
+iPromiseToBringChocolates.then(eatTheChocolates).catch(cryInCorner);
