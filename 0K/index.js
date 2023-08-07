@@ -129,12 +129,12 @@ In Ashynchronous programing language like js: callBack functions are absolute ne
 const bringChocolates = function() {
 
     let didIBringTheChocolates = false; //stage-1
-    console.log("Getting ready to go to market");
-    console.log("Booking a cab to the store");
-    console.log("Selecting the chocolate");
-    console.log("Making the payment");
+    // console.log("Getting ready to go to market");
+    // console.log("Booking a cab to the store");
+    // console.log("Selecting the chocolate");
+    // console.log("Making the payment");
 
-    didIBringTheChocolates = true;//stage-2
+    didIBringTheChocolates = false;//stage-2
 
     if(didIBringTheChocolates == true){
         console.log(`Kishan says: Thank you appa!!`);
