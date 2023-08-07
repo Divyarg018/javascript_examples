@@ -62,7 +62,7 @@ taht si why: call back functions are a way to make sure certain code doesnt exec
 In Ashynchronous programing language like js: callBack functions are absolute necessity*/
 
 
-const profiles ={
+const profiles = {
     'balaji': {
         fullname: 'Balaji KR',
         age: 35,
@@ -97,7 +97,7 @@ const profiles ={
 1) Display keys of all profiles after 2 seconds.
 2) Display profile of kishan agter 3 seconds(from one).
 3) Display kishan's age after 2 seconds(from two).
-4) Display kishan's hobbies after 4 seconds(from three). 
+4) Display kishan's hobbies after 4 seconds(from three).
 */
 
 // function goToHell(pros) {
