@@ -12,4 +12,6 @@
 }
 
 let b = balaji();
-console.log(b); // returning a text
+console.log(b); // returning a promise
+
+
