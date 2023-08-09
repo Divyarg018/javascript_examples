@@ -14,19 +14,17 @@
 </body>
 
 <script>
+    async function execute() {
+        let response = await fetch('https://randomuser.me/api/');
 
-     processData response => return response.json();
+        let data = await response.json();
 
-    function printData(data) {
-        let fullname = data.results[0].name.first + " " + data.results[0].name.last
+        let fullname = data.results[0].name.first + " " + data.results[0].name.last;
         console.log(`Name of a random person: ${fullname}`);
+
     }
 
-    fetch('https://randomuser.me/api/').then( response => response.json()).then(printData);
-
-    // let res = fetchData();
-    // let dataObject = processData();
-    // printData(dataObject);
+    execute();
 
 </script>
 
