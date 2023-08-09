@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div id = "info"></div>
 
-    <center><button id = "show" onclick = "getData()">View</button></center>
+<body>
+    <div id="info"></div>
+
+    <center><button id="show" onclick="getData()">View</button></center>
 </body>
 
 <script>
-    function fetchData(){
-        const response = fetch('https://randomuser.me/api/');
-        return response;
+
+    function processData(response) {
+        return response.json();
     }
 
-        function processData(response){
-            return response.json();
-        }
-
-        function  printData(data){
+    function printData(data) {
         let fullname = data.results[0].name.first + " " + data.results[0].name.last
         console.log(`Name of a random person: ${fullname}`);
-        } 
+    }
 
-        let res = fetchData();
-        let dataObject = processData();
-        printData(dataObject);
+    fetch('https://randomuser.me/api/').then(processData).then(printData);
+
+    // let res = fetchData();
+    // let dataObject = processData();
+    // printData(dataObject);
 
 </script>
+
 </html>
