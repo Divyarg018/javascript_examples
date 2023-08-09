@@ -14,17 +14,20 @@
 </body>
 
 <script>
-    async function execute() {
+    async function getData() {
         let response = await fetch('https://randomuser.me/api/');
 
         let data = await response.json();
 
-        let fullname = data.results[0].name.first + " " + data.results[0].name.last;
-        console.log(`Name of a random person: ${fullname}`);
+        let element = document.getElementById('info');
+            element.innerHTML = "<center><h1>Name:"
+                + data.results[0].name.first
+                + " " + data.results[0].name.last
+                + "</h1></center>";
 
     }
 
-    execute();
+    getData();
 
 </script>
 
