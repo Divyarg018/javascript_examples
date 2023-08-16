@@ -1,0 +1,35 @@
+button#blue-pill{
+    background-color: #304df7;
+    border: 2px solid #304df7;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.45;
+}
+
+button#bluepill:hover{
+    background-color: #ffffff;
+    color: #304df7;
+    border: 2px solid #304df7
+}
+
+button#red-pill{
+    background-color: #e90000;
+    border: 2px solid #e90000;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.45;
+}
+
+button#redpill:hover{
+    background-color: #ffffff;
+    color: #e90000;
+    border: 2px solid #e90000
+}

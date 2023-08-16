@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <script>
+        function sayHello(){
+            alert("Hello User");
+        }
+        function changeText(){
+            //document.write("<h1>Hello World</h1>");
+            // dont use it, it will replace everything on html page
+
+            let h1Element = document.getElementById("heading");
+            h1Element.innerHTML = "Welcome to the world of Matrix";
+
+            console.log(h1Element);
+            console.log(h1Element.innerHTML);
+        }
+
+        let buttonElement = document.getElementById("blue-pill");
+        buttonElement.addEventListener('click', sayHello);
+        // buttonElement.removeEventListener('click', sayHello);
+    </script>
+
+    
+    <h1 id="heading"> Welcome to my website</h1>
+    <button onclick="sayHello()">Click Me</button>
+    <br>
+    <br>
+
+    <button id="blue-pill">blue-pill</button>
+    <button id="red-pill onclick=changeText()">red-pill</button>
+</body>
+</html>
